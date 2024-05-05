@@ -1,0 +1,100 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #de86ea, #0091ff);
+}
+.heading {
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+.heading h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.heading p {
+  font-size: 28px;
+  color: #555;
+}
+h1 {
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 20px;
+  width: 100%; 
+  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  max-width: 100% ;
+  
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(20, 195, 163);
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(41, 206, 221);}
+
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, lightblue, blue);
+  color: #fff;
+}
+
+.logo {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.logo img {
+  height: 90px;
+  width: auto; 
+  border-radius: 8px;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center; 
+  margin-right: 10vw;
+  font-size: 40px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 50px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 10px;
+  }
+}
